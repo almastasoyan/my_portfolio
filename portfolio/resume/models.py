@@ -2,6 +2,8 @@ from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.contrib.auth import get_user_model
 
+User= get_user_model()
+
 class Skill(models.Model):
         name = models.TextField(max_length=20)
         value= models.PositiveIntegerField(validators=[MaxValueValidator(100), MinValueValidator(1)], default=1)
@@ -28,7 +30,7 @@ class Education(models.Model):
         grade = models.TextField(max_length=60, blank=True, null=True)
         created_on = models.DateTimeField(auto_now=True)
 
-User= get_user_model()
+
 
 class PersonalInfo(models.Model):
         phone = models.CharField(max_length=20)
@@ -59,5 +61,10 @@ class Testimonial(models.Model):
         testimonial_image = models.ImageField(upload_to='media/')
         created_on = models.DateTimeField(auto_now=True)
 
+class Message(models.Model):
+        full_name = models.CharField(max_length=50)
+        email = models.EmailField()
+        subject = models.CharField(max_length=100)
+        message = models.CharField(max_length= 1000)
 
 

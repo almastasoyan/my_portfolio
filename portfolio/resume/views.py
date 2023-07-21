@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Skill, Experience, Education,  SocialLink, Language, Testimonial, PersonalInfo
-
+from .forms import MessageForm
 
 def home(request):
     my_skills = Skill.objects.all()
@@ -10,7 +10,7 @@ def home(request):
     my_language = Language.objects.all()
     my_testimonials = Testimonial.objects.all()
     my_personal_info = PersonalInfo.objects.get(user__username = "almastasoyan")
-    
+    messageForm = MessageForm()
 
     my_data = { "personal_info":my_personal_info,
                 "skills": my_skills,
@@ -18,7 +18,8 @@ def home(request):
                 "educations": my_education,
                 "social_links":my_social_link,
                 "languages": my_language,
-                "testimonials": my_testimonials
+                "testimonials": my_testimonials,
+                "messageForm":messageForm
 
             }
     
