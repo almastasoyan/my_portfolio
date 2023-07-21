@@ -1,0 +1,115 @@
+[
+    {
+        "model": "resume.skill",
+        "pk": 1,
+        "fields": {
+            "name": "Python",
+            "value": 90,
+            "created_on": "2023-07-16T13:34:49.962Z"
+        }
+    },
+    {
+        "model": "resume.skill",
+        "pk": 2,
+        "fields": {
+            "name": "HTML/CSS",
+            "value": 40,
+            "created_on": "2023-07-16T13:34:49.962Z"
+        }
+    },
+    {
+        "model": "resume.skill",
+        "pk": 4,
+        "fields": {
+            "name": "Linux",
+            "value": 50,
+            "created_on": "2023-07-16T13:34:49.962Z"
+        }
+    },
+    {
+        "model": "resume.skill",
+        "pk": 5,
+        "fields": {
+            "name": "GitHub",
+            "value": 70,
+            "created_on": "2023-07-16T13:34:49.962Z"
+        }
+    },
+    {
+        "model": "resume.skill",
+        "pk": 6,
+        "fields": {
+            "name": "Django",
+            "value": 40,
+            "created_on": "2023-07-16T13:34:49.962Z"
+        }
+    },
+    {
+        "model": "resume.education",
+        "pk": 1,
+        "fields": {
+            "university_name": "AGBU Armenia",
+            "start_date": "2023-02-06",
+            "end_date": null,
+            "is_current": true,
+            "grade": "Python Developer",
+            "created_on": "2023-07-16T15:04:18.750Z"
+        }
+    },
+    {
+        "model": "resume.personalinfo",
+        "pk": 1,
+        "fields": {
+            "phone": "+374-98-26-62-32",
+            "address": "Petropavlovsk-Kamchatsky, Russia",
+            "age": 24,
+            "about_me": "I am a beginner Python Developer, I love my profession and I want to use it to change the world for the better.",
+            "created_on": "2023-07-18T10:06:45.336Z",
+            "user": 1
+        }
+    },
+    {
+        "model": "resume.sociallink",
+        "pk": 1,
+        "fields": {
+            "link": "https://instagram.com/alla_bakoyan?igshid=MTIzZWMxMTBkOA==",
+            "class_name": "''bx bxl-instagram-alt''",
+            "created_on": "2023-07-18T00:39:43.342Z"
+        }
+    },
+    {
+        "model": "resume.language",
+        "pk": 1,
+        "fields": {
+            "name": "Russian",
+            "created_on": "2023-07-14T05:45:35.770Z"
+        }
+    },
+    {
+        "model": "resume.language",
+        "pk": 2,
+        "fields": {
+            "name": "Armenian",
+            "created_on": "2023-07-14T05:45:57.096Z"
+        }
+    },
+    {
+        "model": "resume.language",
+        "pk": 3,
+        "fields": {
+            "name": "Yezidi",
+            "created_on": "2023-07-14T05:46:18.102Z"
+        }
+    },
+    {
+        "model": "resume.testimonial",
+        "pk": 8,
+        "fields": {
+            "testimonial_name": "Suren Abrahamyan",
+            "testimonial_job_possition": "Python Developer",
+            "testimonial_feedback": "\"Feedback\"",
+            "testimonial_image": "media/suren.jpg",
+            "created_on": "2023-07-21T05:43:46.964Z"
+        }
+    }
+]
