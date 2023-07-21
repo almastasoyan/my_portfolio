@@ -56,7 +56,7 @@ class Testimonial(models.Model):
         testimonial_name  = models.TextField(max_length= 20)
         testimonial_job_possition = models.TextField(max_length= 50)
         testimonial_feedback = models.TextField(max_length=400)
-        testimonial_image = models.ImageField()
+        testimonial_image = models.ImageField(upload_to='media/')
         created_on = models.DateTimeField(auto_now=True)
 
 

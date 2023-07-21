@@ -225,7 +225,7 @@
             {% for i in testimonials%}
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{{i.testimonial_image}}" class="testimonial-img" alt="">
+                <img src='{{ i.testimonial_image.url }}'  class="testimonial-img" alt="">
                 <h3>{{i.testimonial_name}}</h3>
                 <h4>{{i.testimonial_job_possition}}</h4>
                 <p>
