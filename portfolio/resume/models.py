@@ -42,10 +42,12 @@ class PersonalInfo(models.Model):
 
 
 class  SocialLink(models.Model):
-        
         link = models.URLField()
-        class_name= models.TextField()
+        link_name = models.CharField(max_length=100)
+        icon_name = models.CharField(max_length=100, blank=True, null=True)
         created_on = models.DateTimeField(auto_now=True)
+
+
 
 
 
@@ -67,4 +69,11 @@ class Message(models.Model):
         subject = models.CharField(max_length=100)
         message = models.CharField(max_length= 1000)
 
+
+#  <div class="social-links">
+#                             {%for social_link in social_links%}
+#                             <a href="{{social_link.link}}" target="blank" class={{soical_link.link_name}}><i
+#                                     class="{{social_link.icon_name}}"></i></a>
+#                             {%endfor%}
+#                         </div>
 

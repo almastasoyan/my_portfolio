@@ -9,7 +9,7 @@ class MessageForm(forms.ModelForm):
         message = forms.CharField(max_length= 1000, required=True)
 
 
-class Meta:
-        model= Message
-        exclude= ()
+        class Meta:
+            model= Message
+            exclude= ()
 

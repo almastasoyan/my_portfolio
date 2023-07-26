@@ -5,13 +5,12 @@
     <div class="container">
 
         <h3>{{personal_info.user.first_name}} {{personal_info.user.last_name}}</h3>
-        
-        {% for i in social_link%}
         <div class="social-links">
-        <a href={{i.link}} class="instagram"><i class={{i.class_name}}></i></a>
-
-        </div>
+        {% for i in social_links%}
+        <a href="{{i.link}}" class={{i.link_name}}><i class="{{i.icon_name}}"></i></a>
         {% endfor %}
+        </div>
+
 
         <div class="copyright">
         &copy; Copyright <strong><span>{{personal_info.user.first_name}}</span></strong>.

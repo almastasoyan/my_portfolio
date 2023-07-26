@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Skill, Experience, Education, PersonalInfo, SocialLink, Language, Testimonial
+from .models import Skill, Experience, Education, PersonalInfo, SocialLink, Language, Testimonial, Message
 
 
 class ExperienceAdmin(admin.ModelAdmin):
@@ -27,7 +27,7 @@ class PersonalInfoAdmin(admin.ModelAdmin):
 
 class SocialLinkAdmin(admin.ModelAdmin):
     
-    list_display = ['link', 'class_name']
+    pass
 
 
 
@@ -41,6 +41,9 @@ class TestimonialsAdmin(admin.ModelAdmin):
     list_display =["testimonial_name", "testimonial_job_possition"]
     search_fields = ["testimonial_name", "testimonial_job_possition"]
 
+class MessageAdmin(admin.ModelAdmin):
+    pass
+
 
 admin.site.register(Skill, SkillAdmin)
 admin.site.register(Experience,ExperienceAdmin)
@@ -49,6 +52,7 @@ admin.site.register(PersonalInfo, PersonalInfoAdmin)
 admin.site.register(SocialLink, SocialLinkAdmin)
 admin.site.register(Language, LanguageAdmin)
 admin.site.register(Testimonial, TestimonialsAdmin)
+admin.site.register(Message, MessageAdmin)
 
 
 

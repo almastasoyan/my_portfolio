@@ -1,8 +1,19 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Skill, Experience, Education,  SocialLink, Language, Testimonial, PersonalInfo
 from .forms import MessageForm
 
 def home(request):
+
+    if request.method == "POST":
+        print("POSTED DATA")
+        print(request.POST)
+        form = MessageForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("/#contact")
+        
+    
+
     my_skills = Skill.objects.all()
     my_experience = Experience.objects.all()
     my_education = Education.objects.all()
