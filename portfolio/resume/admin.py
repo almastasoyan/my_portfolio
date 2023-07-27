@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Skill, Experience, Education, PersonalInfo, SocialLink, Language, Testimonial, Message
+from .models import Skill, Experience, Education, PersonalInfo, SocialLink, Language, Testimonial, Message, PortfolioProject
 
 
 class ExperienceAdmin(admin.ModelAdmin):
@@ -53,6 +53,6 @@ admin.site.register(SocialLink, SocialLinkAdmin)
 admin.site.register(Language, LanguageAdmin)
 admin.site.register(Testimonial, TestimonialsAdmin)
 admin.site.register(Message, MessageAdmin)
-
+admin.site.register(PortfolioProject)
 
 
