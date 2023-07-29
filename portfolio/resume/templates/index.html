@@ -244,11 +244,13 @@
                   <i class="bx bx-share-alt"></i>
                   <h3>Social Profiles</h3>
 
-              {% for i in social_link %}
+  
                   <div class="social-links">
-                    <a href= {{i.link}} class="instagram"><i class={{i.class_name}}></i></a>
+                  {% for i in social_link %}
+                    <a href= {{i.link}} class="{{i.link_name}}"><i class="{{i.icon_name}}"></i></a>
+                  {% endfor %}
                   </div>
-              {% endfor %}
+              
                 </div>
               </div>
               <div class="col-md-6">
